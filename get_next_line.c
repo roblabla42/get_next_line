@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 15:43:10 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/12 15:53:47 by rlambert         ###   ########.fr       */
+/*   Updated: 2014/11/22 10:57:10 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ static ssize_t	ft_len_to_endline(int fd, t_buf *buf)
 {
 	if (buf->cursor >= buf->size)
 	{
-		buf->size = read(fd, buf->buf, BUF_SIZE);
+		buf->size = read(fd, buf->buf, BUFF_SIZE);
 		buf->cursor = 0;
 	}
 	char *endline = ft_memchr(buf->buf + buf->cursor, '\n', buf->size - buf->cursor);
