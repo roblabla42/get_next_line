@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:14:15 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/12 14:26:51 by rlambert         ###   ########.fr       */
+/*   Updated: 2014/11/24 11:59:59 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -88,8 +88,8 @@ typedef struct		s_avl
 	struct s_avl	*left;
 	struct s_avl	*right;
 }					t_avl;
-t_avl	*ft_avlnew(int key, void *content, size_t content_size);
-void	ft_avladd(t_avl **node, t_avl *avl);
-int		ft_avlheight(t_avl *node);
-t_avl	*ft_avlfind(t_avl *root, int key);
+t_avl				*ft_avlnew(int key, void *content, size_t content_size);
+void				ft_avladd(t_avl **node, t_avl *avl);
+int					ft_avlheight(t_avl *node);
+t_avl				*ft_avlfind(t_avl *root, int key);
 #endif
